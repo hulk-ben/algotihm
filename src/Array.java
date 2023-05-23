@@ -110,7 +110,7 @@ public class Array<E> {
         }
         size--;
         data[size] = null;
-        if (size == data.length >> 1) {
+        if (size == data.length >> 2 && data.length >> 2 != 0) {
             resize(data.length >> 1);
         }
         return res;
